@@ -79,7 +79,7 @@ img, span, svg { display: block; }
   #MAIN
 \*-----------------------------------*/
 
-.container {
+.container1 {
   max-width: 1440px;
   margin: auto;
 }
@@ -322,56 +322,62 @@ main { overflow: hidden; }
   #BLOG
 \*-----------------------------------*/
 
-.blog {
-  padding: 60px var(--px);
-  background: var(--very-light-gray);
+.container{
+  width:60%;
+  margin:30px auto;
+}
+.contact-box{
+  background-color: white;
+  display:flex;
+
+}
+.contactleft{
+  flex-basis: 60%;
+  padding:40px 60px;
+}
+.contactright{
+  flex-basis: 40%;
+  padding:40px;
+  background: linear-gradient(90deg, var(--lime-green), var(--bright-cyan));
+  color: var(--white);
+  border-radius: 30px;
+}
+.input-row input{
+  padding:10px;
+  margin:10px;
+  outline:none;
+  border:none;
+  border-bottom:1px solid #ccc;
+
+
+}
+textarea{
+  
+  width:100%;
+  border:1px solid #ccc;
+  outline:none;
+  padding:10px;
+  box-sizing: border-box;
+}
+.bt1{
+  background: linear-gradient(90deg, var(--lime-green), var(--bright-cyan));
+  color: var(--white);
+  width:100px;
+  border:none;
+  outline:none;
+  color: white;
+  height:40px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px 5px;
+}
+tr td:first-child{
+  padding-right: 30px;
+}
+tr td{
+  padding-top: 20px;
 }
 
-.blog .section-title { margin-bottom: 30px; }
 
-.article-card-group {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-}
-
-.article-card {
-  border-radius: 5px;
-  background: var(--white);
-  overflow: hidden;
-}
-
-.article-card .card-head { height: 200px; }
-
-.article-card .card-img {
-  width:  100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.article-card .card-body { padding: 20px; }
-
-.article-card .article-author {
-  font-size: 10px;
-  color: var(--grayish-blue);
-  margin-bottom: 10px;
-}
-
-.article-card .card-title {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--dark-blue);
-  margin-bottom: 10px;
-  transition: 0.25s ease;
-}
-
-.article-card .card-title:hover { color: var(--lime-green); }
-
-.article-card .card-text {
-  font-size: 13px;
-  color: var(--grayish-blue);
-  line-height: 1.5;
-}
 
 
 
